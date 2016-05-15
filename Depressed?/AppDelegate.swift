@@ -1,4 +1,5 @@
 import UIKit
+import GoogleMaps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -11,6 +12,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().titleTextAttributes = [
             NSForegroundColorAttributeName: UIColor.whiteColor()
         ]
+        
+        GMSServices.provideAPIKey("AIzaSyAvVEuU-lsaCGJzmr3cqG0mDbPQ1NyQVKA")
+        
 
         return true
     }

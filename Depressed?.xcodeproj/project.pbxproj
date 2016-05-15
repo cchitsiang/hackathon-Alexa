@@ -82,19 +82,6 @@ fi
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>13164B5A1C722BB500434654</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>fr</string>
-			<key>path</key>
-			<string>fr.lproj/Main.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>13164B5B1C722BB600434654</key>
 		<dict>
 			<key>isa</key>
@@ -242,6 +229,65 @@ fi
 		<dict>
 			<key>fileRef</key>
 			<string>406617661CE77253006C5F8E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4066176E1CE78BBD006C5F8E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>de</string>
+			<key>path</key>
+			<string>de.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>406617701CE78BBD006C5F8E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>fr</string>
+			<key>path</key>
+			<string>fr.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>406617711CE78BC3006C5F8E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>406617721CE7E1B7006C5F8E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>TravelLocationViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>406617731CE7E1B7006C5F8E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>406617721CE7E1B7006C5F8E</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -653,19 +699,6 @@ fi
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>CA4423FA1BF3F2B500606895</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/Main.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>CA4423FB1BF3F2C400606895</key>
 		<dict>
 			<key>isa</key>
@@ -676,19 +709,6 @@ fi
 			<string>en</string>
 			<key>path</key>
 			<string>en.lproj/Localizable.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CA4423FC1BF3F33F00606895</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>de</string>
-			<key>path</key>
-			<string>de.lproj/Main.strings</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -813,6 +833,7 @@ fi
 		<dict>
 			<key>children</key>
 			<array>
+				<string>406617721CE7E1B7006C5F8E</string>
 				<string>406617611CE72AFC006C5F8E</string>
 				<string>4066175C1CE71D0F006C5F8E</string>
 				<string>CAF8A5601C2A023200E30E90</string>
@@ -1105,6 +1126,10 @@ fi</string>
 		<dict>
 			<key>attributes</key>
 			<dict>
+				<key>KnownAssetTags</key>
+				<array>
+					<string>1</string>
+				</array>
 				<key>LastSwiftUpdateCheck</key>
 				<string>0710</string>
 				<key>LastUpgradeCheck</key>
@@ -1195,6 +1220,7 @@ fi</string>
 				<string>CA6EACC61C29D0CC00841E5F</string>
 				<string>406617651CE73695006C5F8E</string>
 				<string>406617621CE72AFC006C5F8E</string>
+				<string>406617731CE7E1B7006C5F8E</string>
 				<string>CA6600421BEC09EF00042495</string>
 				<string>CA6600441BED058C00042495</string>
 				<string>CA8683931BE012D0003E87A4</string>
@@ -1365,10 +1391,9 @@ fi</string>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>CA8683731BE004A9003E87A4</string>
-				<string>CA4423FC1BF3F33F00606895</string>
-				<string>CA4423FA1BF3F2B500606895</string>
-				<string>13164B5A1C722BB500434654</string>
+				<string>4066176E1CE78BBD006C5F8E</string>
+				<string>406617701CE78BBD006C5F8E</string>
+				<string>406617711CE78BC3006C5F8E</string>
 			</array>
 			<key>isa</key>
 			<string>PBXVariantGroup</string>
@@ -1376,19 +1401,6 @@ fi</string>
 			<string>Main.storyboard</string>
 			<key>path</key>
 			<string>.</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CA8683731BE004A9003E87A4</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
