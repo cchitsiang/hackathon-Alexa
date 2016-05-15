@@ -35,7 +35,7 @@ class ConfirmRiskViewController: BaseViewController,  MBProgressHUDDelegate
             
             // ...Run something once we're done with the background task...
             
-            self.performSegueWithIdentifier("AskInvestSegue", sender: self)
+            self.performSegueWithIdentifier("PerformanceSegue", sender: self)
         };
         
         

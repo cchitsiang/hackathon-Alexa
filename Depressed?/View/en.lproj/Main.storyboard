@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Alexa-->
+        <!--Alexi-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="StartViewController" customModule="Depressed" customModuleProvider="target" sceneMemberID="viewController">
@@ -64,7 +64,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.43922001119999998" green="0.2392199934" blue="0.78430998330000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Alexa" id="zXf-eP-or7">
+                    <navigationItem key="navigationItem" title="Alexi" id="zXf-eP-or7">
                         <barButtonItem key="rightBarButtonItem" image="info" id="pX1-oG-vGA">
                             <connections>
                                 <segue destination="TeC-IS-Kgz" kind="modal" id="hyr-cY-Lqh"/>
@@ -79,7 +79,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140.80000000000001" y="661.72000000000003"/>
+            <point key="canvasLocation" x="-156" y="-315"/>
         </scene>
         <!--Info View Controller-->
         <scene sceneID="DN5-Nu-ZZ2">
@@ -90,30 +90,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fKk-GO-lTr">
-                                <rect key="frame" x="82" y="130" width="156" height="105"/>
+                                <rect key="frame" x="0.0" y="130" width="320" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Made with Love 
-by Christian Lobach</string>
+by Team A</string>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vtA-bm-2Ge">
-                                <rect key="frame" x="42" y="251" width="236" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="This app uses Apple's ResearchKit"/>
-                                <connections>
-                                    <segue destination="SvN-7U-Q8J" kind="push" id="M4L-6Y-ALK"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alexa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="g99-6h-7XJ">
-                                <rect key="frame" x="202" y="30" width="197" height="46"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alexi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="g99-6h-7XJ">
+                                <rect key="frame" x="61" y="30" width="197" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="38"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.2 (777)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Por-rP-7MP">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Por-rP-7MP">
                                 <rect key="frame" x="128" y="84" width="64" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
@@ -136,124 +128,7 @@ by Christian Lobach</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LnQ-Gi-NDv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1346.6666666666667" y="-442.09333333333331"/>
-        </scene>
-        <!--ResearchKit-->
-        <scene sceneID="XeJ-Fi-LlU">
-            <objects>
-                <viewController title="ResearchKit" extendedLayoutIncludesOpaqueBars="YES" id="SvN-7U-Q8J" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="rPn-l5-bGc">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" indicatorStyle="white" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" selectable="NO" id="7eX-9i-GX2">
-                                <rect key="frame" x="16" y="64" width="288" height="504"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.43922001119999998" green="0.2392199934" blue="0.78430998330000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">Copyright (c) 2015, Apple Inc. All rights reserved.
- 
- Redistribution and use in source and binary forms, with or without modification,
- are permitted provided that the following conditions are met:
- 
- 1.  Redistributions of source code must retain the above copyright notice, this
- list of conditions and the following disclaimer.
- 
- 2.  Redistributions in binary form must reproduce the above copyright notice,
- this list of conditions and the following disclaimer in the documentation and/or
- other materials provided with the distribution.
- 
- 3.  Neither the name of the copyright holder(s) nor the names of any contributors
- may be used to endorse or promote products derived from this software without
- specific prior written permission. No license is granted to the trademarks of
- the copyright holders even if such marks are included in this software.
- 
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE
- FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
- DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
- SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
- CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
- OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
- OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</string>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.43922001119999998" green="0.2392199934" blue="0.78430998330000001" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="LiS-qb-lFR"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Y9c-4d-BK1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1685.8666666666666" y="-442.09333333333331"/>
-        </scene>
-        <!--Evaluation View Controller-->
-        <scene sceneID="fA5-Vd-lTf">
-            <objects>
-                <viewController storyboardIdentifier="EvaluationViewController" id="2iT-wc-f4b" customClass="EvaluationViewController" customModule="Depressed" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="zd9-yr-bKF">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your answers indicate that you have a severe depression" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XvL-49-Ptb">
-                                <rect key="frame" x="84" y="224" width="432" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You said that you had thoughts about being better of dead, please talk to your doctor" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="I2E-Nh-YXO">
-                                <rect key="frame" x="20" y="312" width="280" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lN6-ZG-HW7">
-                                <rect key="frame" x="110" y="253" width="100" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
-                                <state key="normal" title="View Details &gt;"/>
-                                <connections>
-                                    <segue destination="HHJ-Sh-ieB" kind="modal" id="P5Y-y9-3la"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="19Z-vg-aia">
-                                <rect key="frame" x="30" y="395" width="540" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Find Help">
-                                    <color key="titleColor" red="0.43922001119999998" green="0.2392199934" blue="0.78430998330000001" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="findHelpTapped:" destination="2iT-wc-f4b" eventType="touchUpInside" id="oai-ZJ-wxV"/>
-                                    <action selector="startTest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dbu-DD-6mh"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="'Find Help' link provided by Organization" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YuG-8i-WLh">
-                                <rect key="frame" x="30" y="462" width="540" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="0.43922001119999998" green="0.2392199934" blue="0.78430998330000001" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <connections>
-                        <outlet property="additionalLabel" destination="I2E-Nh-YXO" id="eL4-I5-Cpj"/>
-                        <outlet property="findHelpButton" destination="19Z-vg-aia" id="cQZ-CX-VEj"/>
-                        <outlet property="findHelpLabel" destination="YuG-8i-WLh" id="ld5-9T-p5h"/>
-                        <outlet property="resultLabel" destination="XvL-49-Ptb" id="hIj-wS-DxI"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rxW-hD-lpn" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1093.3333333333333" y="339.85333333333335"/>
+            <point key="canvasLocation" x="946" y="-1203"/>
         </scene>
         <!--Evaluation Details View Controller-->
         <scene sceneID="apK-hi-91m">
@@ -499,7 +374,7 @@ by Christian Lobach</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="97Q-mo-cKu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1457.5999999999999" y="330.38666666666666"/>
+            <point key="canvasLocation" x="2257" y="2074"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jwH-9D-EFG">
@@ -521,7 +396,7 @@ by Christian Lobach</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kpf-vK-qor" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32" y="-341.74666666666667"/>
+            <point key="canvasLocation" x="-936" y="-326"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eLL-MF-BOd">
@@ -540,7 +415,7 @@ by Christian Lobach</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hEr-kP-7uG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="557.33333333333337" y="616.27999999999997"/>
+            <point key="canvasLocation" x="389" y="-1192"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="TqM-cG-Oek">
@@ -604,7 +479,7 @@ by Christian Lobach</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jlz-ih-gkK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="448.5333333333333" y="-330.38666666666666"/>
+            <point key="canvasLocation" x="1704" y="2061"/>
         </scene>
         <!--Travel Location-->
         <scene sceneID="m3w-Ow-TsD">
@@ -672,18 +547,6 @@ by Christian Lobach</string>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VBd-F9-IiJ">
-                                        <rect key="frame" x="26" y="97" width="268" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="Next">
-                                            <color key="titleColor" red="0.43922001119999998" green="0.2392199934" blue="0.78430998330000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="7Bo-4t-TER" kind="push" id="bfb-An-CUl"/>
-                                        </connections>
-                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FBE-zL-YcR">
                                         <rect key="frame" x="202" y="23" width="42" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -693,73 +556,33 @@ by Christian Lobach</string>
                                     </label>
                                 </subviews>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VBd-F9-IiJ">
+                                <rect key="frame" x="26" y="425" width="268" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.43922001119999998" green="0.2392199934" blue="0.78430998330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7Bo-4t-TER" kind="push" id="bfb-An-CUl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.43922001119999998" green="0.2392199934" blue="0.78430998330000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Alexa" id="zdq-62-kth">
+                    <navigationItem key="navigationItem" title="Alexi" id="zdq-62-kth">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="cancel" id="0Km-7a-OOX"/>
                     </navigationItem>
                     <connections>
                         <outlet property="gradientView" destination="DbE-b3-pRR" id="4J8-gA-bU9"/>
                         <outlet property="lblLocation" destination="V8C-XM-SeL" id="N2j-XK-b3y"/>
+                        <outlet property="txtDays" destination="73E-j9-XXj" id="icH-EA-83A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hZ8-FI-cfC" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="122" y="1350"/>
-        </scene>
-        <!--Income-->
-        <scene sceneID="hQj-dq-atA">
-            <objects>
-                <viewController title="Income" id="aMf-RS-nBU" customClass="StartViewController" customModule="Depressed" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="s0f-gW-bto">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" id="CH6-bk-MUQ" customClass="ParkedTextField" customModule="ParkedTextField">
-                                <rect key="frame" x="75" y="46" width="50" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad" returnKeyType="next"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="parkedTextColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="r4a-WR-8nv">
-                                <rect key="frame" x="20" y="292" width="268" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Start the Test">
-                                    <color key="titleColor" red="0.43922001119999998" green="0.2392199934" blue="0.78430998330000001" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="startTest:" destination="aMf-RS-nBU" eventType="touchUpInside" id="Isx-Tz-UvM"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am    years old, I want to " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bxm-Gw-Gw7">
-                                <rect key="frame" x="26" y="50" width="268" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="0.43922001119999998" green="0.2392199934" blue="0.78430998330000001" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Alexa" id="YL6-sA-BJy">
-                        <barButtonItem key="rightBarButtonItem" image="info" id="bh5-aj-kbf"/>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="ageTextField" destination="CH6-bk-MUQ" id="IeV-l7-WDS"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wAK-xk-dOk" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-407.46666666666664" y="453.45333333333332"/>
+            <point key="canvasLocation" x="-156" y="454"/>
         </scene>
         <!--Confirm Risk-->
         <scene sceneID="zRw-gV-zRW">
@@ -798,18 +621,6 @@ by Christian Lobach</string>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aAe-B4-Hzt">
-                                        <rect key="frame" x="26" y="179" width="268" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="Done">
-                                            <color key="titleColor" red="0.43922001119999998" green="0.2392199934" blue="0.78430998330000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="doneClicked:" destination="7Bo-4t-TER" eventType="touchUpInside" id="ciE-yX-ON7"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="say-jc-EW8" customClass="DLRadioButton">
                                         <rect key="frame" x="0.0" y="8" width="320" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -827,27 +638,39 @@ by Christian Lobach</string>
                                     </button>
                                 </subviews>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aAe-B4-Hzt">
+                                <rect key="frame" x="26" y="425" width="268" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" red="0.43922001119999998" green="0.2392199934" blue="0.78430998330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneClicked:" destination="7Bo-4t-TER" eventType="touchUpInside" id="ciE-yX-ON7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.43922001119999998" green="0.2392199934" blue="0.78430998330000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Alexa" id="2J9-z1-Tqz">
+                    <navigationItem key="navigationItem" title="Alexi" id="2J9-z1-Tqz">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="cancel" id="veD-SH-sYb"/>
                     </navigationItem>
                     <connections>
                         <outlet property="gradientView" destination="dTt-2R-L0G" id="mLI-ga-itN"/>
-                        <segue destination="YvV-cs-hY0" kind="push" identifier="AskInvestSegue" id="ZK7-54-CRZ"/>
+                        <segue destination="IPX-Et-VeQ" kind="push" identifier="PerformanceSegue" id="R0q-R4-FAZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ZS-A0-kR5" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-234" y="1369"/>
+            <point key="canvasLocation" x="566" y="449"/>
         </scene>
         <!--Ask Invest-->
         <scene sceneID="bfz-VR-UhP">
             <objects>
                 <viewController title="Ask Invest" id="YvV-cs-hY0" customClass="AskInvestViewController" customModule="Depressed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gC3-Uq-gMZ">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="ChF-kJ-vRo" userLabel="Gradient View">
@@ -866,37 +689,35 @@ by Christian Lobach</string>
                             <view contentMode="scaleToFill" id="h4S-l4-uFs">
                                 <rect key="frame" x="0.0" y="136" width="320" height="334"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eqO-N7-7Vd">
-                                        <rect key="frame" x="32" y="31" width="121" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="No">
-                                            <color key="titleColor" red="0.43922001119999998" green="0.2392199934" blue="0.78430998330000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="IPX-Et-VeQ" kind="push" id="Ewx-DU-8jN"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IXg-vI-GDr">
-                                        <rect key="frame" x="167" y="31" width="121" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="Proceed">
-                                            <color key="titleColor" red="0.43922001119999998" green="0.2392199934" blue="0.78430998330000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="IPX-Et-VeQ" kind="push" id="DmR-Bc-rS0"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eqO-N7-7Vd">
+                                <rect key="frame" x="26" y="425" width="121" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="No">
+                                    <color key="titleColor" red="0.43922001119999998" green="0.2392199934" blue="0.78430998330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="IPX-Et-VeQ" kind="push" id="Ewx-DU-8jN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IXg-vI-GDr">
+                                <rect key="frame" x="170" y="425" width="121" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Proceed">
+                                    <color key="titleColor" red="0.43922001119999998" green="0.2392199934" blue="0.78430998330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="IPX-Et-VeQ" kind="push" id="DmR-Bc-rS0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.43922001119999998" green="0.2392199934" blue="0.78430998330000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Alexa" id="XiE-N0-udy">
+                    <navigationItem key="navigationItem" title="Alexi" id="XiE-N0-udy">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="cancel" id="Bri-Mg-pXG"/>
                     </navigationItem>
                     <connections>
@@ -905,7 +726,7 @@ by Christian Lobach</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YJw-uL-dNF" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-296" y="2009"/>
+            <point key="canvasLocation" x="1368" y="433"/>
         </scene>
         <!--Performance-->
         <scene sceneID="XBC-uq-3Xy">
@@ -921,15 +742,31 @@ by Christian Lobach</string>
                                 <color key="backgroundColor" red="0.43921568630000002" green="0.23921568630000001" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
                                 <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
                             </view>
-                            <view contentMode="scaleToFill" id="56z-Y0-29h">
-                                <rect key="frame" x="0.0" y="136" width="320" height="334"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="first_chart" id="28Q-AJ-iCw">
+                                <rect key="frame" x="19" y="19" width="281" height="230"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </view>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="second_chart" id="sgX-c9-Bd8">
+                                <rect key="frame" x="19" y="257" width="281" height="132"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TqH-DU-7Mr">
+                                <rect key="frame" x="26" y="425" width="268" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Details">
+                                    <color key="titleColor" red="0.43922001119999998" green="0.2392199934" blue="0.78430998330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneClicked:" destination="7Bo-4t-TER" eventType="touchUpInside" id="ohl-Pm-uYc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.43922001119999998" green="0.2392199934" blue="0.78430998330000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Alexa" id="xAv-Wl-WD0">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="cancel" id="MMa-hb-5Eu"/>
+                    <navigationItem key="navigationItem" title="Alexi" id="xAv-Wl-WD0">
+                        <barButtonItem key="rightBarButtonItem" image="info" id="MMa-hb-5Eu"/>
                     </navigationItem>
                     <connections>
                         <outlet property="gradientView" destination="Lmj-g3-rNq" id="2aj-LX-IRT"/>
@@ -937,15 +774,17 @@ by Christian Lobach</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5zw-7j-MdE" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="51" y="2085"/>
+            <point key="canvasLocation" x="954" y="-244"/>
         </scene>
     </scenes>
     <resources>
         <image name="education" width="512" height="512"/>
+        <image name="first_chart" width="700" height="600"/>
         <image name="info" width="22" height="22"/>
+        <image name="second_chart" width="702" height="338"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DmR-Bc-rS0"/>
+        <segue reference="R0q-R4-FAZ"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

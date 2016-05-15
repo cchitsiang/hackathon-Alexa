@@ -8,12 +8,14 @@
 
 import Foundation
 import GoogleMaps
+import ParkedTextField
 
 class TravelLocationViewController: BaseViewController
 {
     @IBOutlet weak var gradientView: UIView!
     @IBOutlet weak var lblLocation: UILabel!
     
+    @IBOutlet weak var txtDays: ParkedTextField!
     
     @IBAction func autocompleteClicked(sender: AnyObject) {
         let filter = GMSAutocompleteFilter()
@@ -29,11 +31,33 @@ class TravelLocationViewController: BaseViewController
         super.viewDidLoad()
         addSlideMenuButton()
         addGradient()
+        addDoneButtonOnKeyboard()
+        
+    }
+    
+    func addDoneButtonOnKeyboard()
+    {
+        let doneToolbar: UIToolbar = UIToolbar(frame: CGRectMake(0, 0, 320, 50))
+        doneToolbar.barStyle = UIBarStyle.Default
+        let flexSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil)
+        let done: UIBarButtonItem = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.Done, target: self, action: Selector("doneButtonAction"))
+        var items = [UIBarButtonItem]()
+        items.append(flexSpace)
+        items.append(done)
+        
+        doneToolbar.items = items
+        doneToolbar.sizeToFit()
+        
+         self.txtDays.inputAccessoryView = doneToolbar
+    }
+    
+    func doneButtonAction()
+    {
+        self.txtDays.resignFirstResponder()
     }
     
     
     func addGradient(){
-        //.viewThatHoldsGradient.frame.size //703DC8
         let purple = hexStringToUIColor("C36ACD")
         let gradient:CAGradientLayer = CAGradientLayer()
         gradient.frame.size = self.gradientView.frame.size;
@@ -48,11 +72,16 @@ extension TravelLocationViewController: GMSAutocompleteViewControllerDelegate {
     // Handle the user's selection.
     func viewController(viewController: GMSAutocompleteViewController, didAutocompleteWithPlace place: GMSPlace) {
         
-        self.lblLocation.text = place.name
+        self.lblLocation.text = place.formattedAddress
+        
+        
         print("Place name: ", place.name)
         print("Place address: ", place.formattedAddress)
         print("Place attributions: ", place.attributions)
+        
         self.dismissViewControllerAnimated(true, completion: nil)
+        
+        self.txtDays.becomeFirstResponder()
     }
     
     func viewController(viewController: GMSAutocompleteViewController, didFailAutocompleteWithError error: NSError) {
