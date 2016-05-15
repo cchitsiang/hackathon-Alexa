@@ -11,7 +11,10 @@ import GoogleMaps
 
 class TravelLocationViewController: BaseViewController
 {
+    @IBOutlet weak var gradientView: UIView!
     @IBOutlet weak var lblLocation: UILabel!
+    
+    
     @IBAction func autocompleteClicked(sender: AnyObject) {
         let filter = GMSAutocompleteFilter()
         filter.type = .City
@@ -25,6 +28,18 @@ class TravelLocationViewController: BaseViewController
     override func viewDidLoad() {
         super.viewDidLoad()
         addSlideMenuButton()
+        addGradient()
+    }
+    
+    
+    func addGradient(){
+        //.viewThatHoldsGradient.frame.size //703DC8
+        let purple = hexStringToUIColor("C36ACD")
+        let gradient:CAGradientLayer = CAGradientLayer()
+        gradient.frame.size = self.gradientView.frame.size;
+        gradient.colors = [purple.CGColor, purple.colorWithAlphaComponent(0).CGColor] //Or any colors
+        self.gradientView.layer.addSublayer(gradient)
+        
     }
 }
 

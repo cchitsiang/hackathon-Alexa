@@ -4,6 +4,7 @@ use_frameworks!
 pod 'ParkedTextField'
 pod 'MBProgressHUD'
 pod 'GoogleMaps'
+pod 'DLRadioButton', '~> 1.4'
 
 target 'Depressed?' do
   pod 'ResearchKit', '~> 1.3'
