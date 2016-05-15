@@ -848,7 +848,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "de.christian-lobach.Depressed";
 				PRODUCT_MODULE_NAME = Depressed;
 				PRODUCT_NAME = Depressed;
-				PROVISIONING_PROFILE = "1e69a8bf-b6ae-4439-a494-b2d2748b0f4a";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Depressed?/Supporting Files/Depressed?-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

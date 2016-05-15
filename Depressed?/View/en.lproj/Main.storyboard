@@ -79,7 +79,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-156" y="-315"/>
+            <point key="canvasLocation" x="-180" y="-851"/>
         </scene>
         <!--Info View Controller-->
         <scene sceneID="DN5-Nu-ZZ2">
@@ -392,6 +392,7 @@ by Team A</string>
                     <nil name="viewControllers"/>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Zxt-wB-I3u"/>
+                        <segue destination="OTU-Kf-wxW" kind="modal" identifier="NotificationSegue" id="bpR-zA-Lgp"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kpf-vK-qor" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -670,7 +671,7 @@ by Team A</string>
             <objects>
                 <viewController title="Ask Invest" id="YvV-cs-hY0" customClass="AskInvestViewController" customModule="Depressed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gC3-Uq-gMZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="ChF-kJ-vRo" userLabel="Gradient View">
@@ -718,7 +719,7 @@ by Team A</string>
                         <color key="backgroundColor" red="0.43922001119999998" green="0.2392199934" blue="0.78430998330000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Alexi" id="XiE-N0-udy">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="cancel" id="Bri-Mg-pXG"/>
+                        <barButtonItem key="rightBarButtonItem" title=" " style="done" id="Bri-Mg-pXG"/>
                     </navigationItem>
                     <connections>
                         <outlet property="gradientView" destination="ChF-kJ-vRo" id="pZc-nc-wi9"/>
@@ -726,7 +727,7 @@ by Team A</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YJw-uL-dNF" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1368" y="433"/>
+            <point key="canvasLocation" x="1696" y="849"/>
         </scene>
         <!--Performance-->
         <scene sceneID="XBC-uq-3Xy">
@@ -770,11 +771,31 @@ by Team A</string>
                     </navigationItem>
                     <connections>
                         <outlet property="gradientView" destination="Lmj-g3-rNq" id="2aj-LX-IRT"/>
+                        <segue destination="YvV-cs-hY0" kind="modal" identifier="AskInvestModalSegue" id="LTL-dG-xDg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5zw-7j-MdE" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="954" y="-244"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mj8-QO-b5m">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OTU-Kf-wxW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="20U-c2-gT6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.33524699870000002" green="0.1822675034" blue="0.59980872070000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YvV-cs-hY0" kind="relationship" relationship="rootViewController" id="KAJ-ti-Z8K"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G9Z-jj-Kax" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="429" y="-216"/>
         </scene>
     </scenes>
     <resources>
@@ -784,7 +805,8 @@ by Team A</string>
         <image name="second_chart" width="702" height="338"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="R0q-R4-FAZ"/>
+        <segue reference="KAJ-ti-Z8K"/>
+        <segue reference="DmR-Bc-rS0"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>
