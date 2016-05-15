@@ -8,7 +8,7 @@
         <!--Alexi-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="StartViewController" customModule="Depressed" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Home" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="StartViewController" customModule="Depressed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -669,7 +669,7 @@ by Team A</string>
         <!--Ask Invest-->
         <scene sceneID="bfz-VR-UhP">
             <objects>
-                <viewController title="Ask Invest" id="YvV-cs-hY0" customClass="AskInvestViewController" customModule="Depressed" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AskInvest" title="Ask Invest" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YvV-cs-hY0" customClass="AskInvestViewController" customModule="Depressed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gC3-Uq-gMZ">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

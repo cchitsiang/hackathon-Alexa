@@ -17,6 +17,17 @@ class PerformanceViewController: BaseViewController
         super.viewDidLoad()
         addSlideMenuButton()
         addGradient()
+        //forDemo()
+    }
+    
+    func forDemo() {
+        let dateTime = NSDate(timeIntervalSinceNow: 3)
+        let notification = UILocalNotification()
+        notification.applicationIconBadgeNumber = 1
+        notification.timeZone = NSTimeZone.defaultTimeZone()
+        notification.fireDate = dateTime
+        notification.alertBody = "We will charge your account to to invest in RHB Focus Income Bond Fund..."
+        UIApplication.sharedApplication().scheduleLocalNotification(notification)
     }
     
     func addGradient(){

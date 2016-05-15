@@ -69,7 +69,7 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
         
         let topViewController : UIViewController = self.navigationController!.topViewController!
         
-        if (topViewController.restorationIdentifier! == destViewController.restorationIdentifier!){
+        if (topViewController.restorationIdentifier != nil && topViewController.restorationIdentifier! == destViewController.restorationIdentifier!){
             print("Same VC")
         } else {
             self.navigationController!.pushViewController(destViewController, animated: true)
@@ -80,7 +80,7 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
         let btnShowMenu = UIButton(type: UIButtonType.System)
         btnShowMenu.setImage(self.defaultMenuImage(), forState: UIControlState.Normal)
         btnShowMenu.frame = CGRectMake(0, 0, 30, 30)
-        //btnShowMenu.addTarget(self, action: #selector(BaseViewController.onSlideMenuButtonPressed(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+        btnShowMenu.addTarget(self, action: #selector(BaseViewController.onSlideMenuButtonPressed(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         let customBarItem = UIBarButtonItem(customView: btnShowMenu)
         self.navigationItem.leftBarButtonItem = customBarItem;
     }
@@ -108,6 +108,11 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
     }
     
     func onSlideMenuButtonPressed(sender : UIButton){
+        
+        self.openViewControllerBasedOnIdentifier("Home")
+    }
+    
+    func openMenu(sender : UIButton) {
         if (sender.tag == 10)
         {
             // To Hide Menu If it already there
